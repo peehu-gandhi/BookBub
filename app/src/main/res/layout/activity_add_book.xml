@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddBookActivity"
+    android:background="@color/back_color"
+    android:orientation="vertical">
+<!--    <EditText-->
+<!--        android:id="@+id/ed_title"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textColorHint="@color/white"-->
+<!--        android:hint="Enter Your Note Details"-->
+<!--        android:gravity="start|top"-->
+<!--        android:inputType="textImeMultiLine"-->
+<!--        android:background="@color/back_color"-->
+<!--     />-->
+<!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/idFabSave"-->
+<!--        layout_alignParentBottom="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:onClick="Save Button"-->
+<!--        android:src="@drawable/fabv"-->
+<!--        android:backgroundTint="@color/fab_color"-->
+<!--        tools:ignore="OnClick" />-->
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:weightSum="3">-->
+<!--        <Button-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:text="-"-->
+<!--            android:id="@+id/idBtn"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textSize="18sp">-->
+<!--        </Button>-->
+<!--        <TextView-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="12"-->
+<!--            android:layout_weight="1"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textSize="18sp"></TextView>-->
+<!--    </LinearLayout>-->
+<!--    <EditText-->
+<!--        android:id="@+id/ed_book"-->
+<!--        android:hint="Add Books"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:padding="8dp"-->
+<!--        android:textStyle="normal"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        tools:ignore="MissingClass" />-->
+<!--    <-->
+<!--        android:id="@+id/html_editor"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        tools:ignore="MissingClass" />-->
+</RelativeLayout>

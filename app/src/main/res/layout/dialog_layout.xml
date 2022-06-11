@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center">
+    <TextView
+        android:id="@+id/tv_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter OTP"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/indigo_daisy"
+        android:layout_marginTop="60dp"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="25dp" />
+    <EditText
+        android:id="@+id/otp_text"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:background="@drawable/edittext_stoke_borders"
+        android:inputType="number"
+        android:hint="......"
+        android:letterSpacing="0.5"
+        android:maxLength="6"
+        android:gravity="center"
+        tools:layout_editor_absoluteX="118dp"
+        tools:layout_editor_absoluteY="76dp" />
+    <Button
+        android:id="@+id/verify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/startblue"
+        android:gravity="center"
+        android:onClick="verifyOTP"
+        android:fontFamily="@font/indigo_daisy"
+        android:text="Verify"
+        android:textColor="@color/white" />
+    <TextView
+        android:id="@+id/resend_otp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter OTP"
+        android:fontFamily="@font/indigo_daisy"
+       />
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rv"
+        android:background="@drawable/bookcover2"
+
+        >
+<TextView
+    android:layout_centerInParent="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:fontFamily="@font/book_font"
+    android:textSize="60dp"
+    android:id="@+id/bookname"
+    android:textColor="@color/book_name_color"
+    android:text="East of\nEden">
+</TextView>
+    <TextView
+        android:layout_below="@+id/bookname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_regular"
+        android:textSize="25sp"
+        android:id="@+id/authorname"
+        android:textColor="@color/book_name_color"
+        android:text="Compiled by ">
+    </TextView>
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/authorname"
+        android:layout_marginTop="161dp"
+        android:fontFamily="@font/indigo_daisy"
+        android:text="A beautifully illustrated book that is worth sharing and reading."
+        android:textColor="@color/book_name_color"
+        android:textSize="25sp"></TextView>
+</RelativeLayout>
+</RelativeLayout>

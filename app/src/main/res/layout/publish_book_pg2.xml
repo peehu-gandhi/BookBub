@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="202dp"
+        android:background="@drawable/rect"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/txt_choose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SELECT GENRES"
+            android:textColor="@color/white"
+            android:textSize="18sp"></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_choose"
+            android:text="A book can have multiple genres,select them wisely."
+            android:textColor="@color/white"
+            android:textSize="12sp"></TextView>
+    </RelativeLayout>
+
+    <androidx.legacy.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="35dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/scifi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sci-fi"
+            android:textColor="@color/startblue"
+
+            app:buttonTint="@color/startblue" />
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/horror"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Horror"
+            android:textColor="@color/startblue"
+
+            app:buttonTint="@color/startblue" />
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/comedy"
+            android:textColor="@color/startblue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Comedy"
+            app:buttonTint="@color/startblue" />
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/study"
+            android:textColor="@color/startblue"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Study"
+            app:buttonTint="@color/startblue" />
+
+
+
+<!--        <TableLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            >-->
+<!--            <TableRow-->
+<!--                android:layout_width="fill_parent"-->
+<!--                android:layout_height="fill_parent">-->
+
+<!--                <androidx.cardview.widget.CardView-->
+<!--                    android:id="@+id/cardscifi"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:padding="4dp"-->
+<!--                    android:paddingStart="55dp"-->
+<!--                    android:paddingLeft="55dp"-->
+<!--                    android:textSize="10dp"-->
+<!--                    app:cardBackgroundColor="@color/white"-->
+<!--                    app:cardCornerRadius="20dp"-->
+<!--                    app:cardElevation="10dp">-->
+
+<!--                    <RelativeLayout-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content">-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/scifi"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:background="@drawable/rounded_border"-->
+<!--                            android:padding="10dp"-->
+<!--                            android:text="Sci-fi"-->
+<!--                            android:textColor="#2052E8">-->
+
+<!--                        </TextView>-->
+<!--                    </RelativeLayout>-->
+<!--                </androidx.cardview.widget.CardView>-->
+<!--                <androidx.legacy.widget.Space-->
+<!--                    android:layout_width="10dp"-->
+<!--                    android:layout_height="1dp" />-->
+
+<!--                <androidx.cardview.widget.CardView-->
+<!--                    android:id="@+id/cardhorror"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:padding="4dp"-->
+<!--                    android:paddingStart="55dp"-->
+<!--                    android:paddingLeft="55dp"-->
+<!--                    android:textSize="10dp"-->
+<!--                    app:cardBackgroundColor="@color/white"-->
+<!--                    app:cardCornerRadius="20dp"-->
+<!--                    app:cardElevation="10dp">-->
+
+<!--                    <RelativeLayout-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content">-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/horror"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:background="@drawable/rounded_border"-->
+<!--                            android:padding="10dp"-->
+<!--                            android:text="Horror"-->
+<!--                            android:textColor="#2052E8"></TextView>-->
+<!--                    </RelativeLayout>-->
+<!--                </androidx.cardview.widget.CardView>-->
+<!--                <androidx.legacy.widget.Space-->
+<!--                    android:layout_width="10dp"-->
+<!--                    android:layout_height="1dp" />-->
+
+<!--                <androidx.cardview.widget.CardView-->
+<!--                    android:id="@+id/cardcomedy"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:padding="4dp"-->
+<!--                    android:paddingStart="55dp"-->
+<!--                    android:paddingLeft="55dp"-->
+<!--                    android:textSize="10dp"-->
+<!--                    app:cardBackgroundColor="@color/white"-->
+<!--                    app:cardCornerRadius="20dp"-->
+<!--                    app:cardElevation="10dp">-->
+
+<!--                    <RelativeLayout-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content">-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/comedy"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:background="@drawable/rounded_border"-->
+<!--                            android:padding="10dp"-->
+<!--                            android:text="Comedy"-->
+<!--                            android:textColor="#2052E8"></TextView>-->
+<!--                    </RelativeLayout>-->
+<!--                </androidx.cardview.widget.CardView>-->
+<!--                <androidx.legacy.widget.Space-->
+<!--                    android:layout_width="10dp"-->
+<!--                    android:layout_height="1dp" />-->
+
+<!--                <androidx.cardview.widget.CardView-->
+<!--                    android:id="@+id/cardstudy"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:padding="4dp"-->
+<!--                    android:paddingStart="55dp"-->
+<!--                    android:paddingLeft="55dp"-->
+<!--                    android:textSize="10dp"-->
+<!--                    app:cardBackgroundColor="@color/white"-->
+<!--                    app:cardCornerRadius="20dp"-->
+<!--                    app:cardElevation="10dp">-->
+
+<!--                    <RelativeLayout-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content">-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/study"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:background="@drawable/rounded_border"-->
+<!--                            android:padding="10dp"-->
+<!--                            android:text="Study"-->
+<!--                            android:textColor="#2052E8"></TextView>-->
+<!--                    </RelativeLayout>-->
+<!--                </androidx.cardview.widget.CardView>-->
+<!--                <androidx.legacy.widget.Space-->
+<!--                    android:layout_width="10dp"-->
+<!--                    android:layout_height="1dp" />-->
+<!--            </TableRow>-->
+<!--            &lt;!&ndash;         NEW ROW&ndash;&gt;-->
+<!--            <TableRow>-->
+<!--                <androidx.legacy.widget.Space-->
+<!--                    android:layout_width="1dp"-->
+<!--                    android:layout_height="10dp" />-->
+<!--            </TableRow>-->
+<!--            <TableRow>-->
+<!--                <androidx.cardview.widget.CardView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    app:cardCornerRadius="20dp"-->
+<!--                    app:cardElevation="10dp"-->
+<!--                    android:paddingStart="55dp"-->
+<!--                    app:cardBackgroundColor="@color/white"-->
+<!--                    android:padding="4dp"-->
+<!--                    android:textSize="10dp"-->
+<!--                    android:paddingLeft="55dp">-->
+<!--                    <RelativeLayout-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content">-->
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:padding="10dp"-->
+<!--                            android:background="@drawable/rounded_border"-->
+<!--                            android:textColor="#2052E8"-->
+<!--                            android:text="Kannada"></TextView>-->
+<!--                    </RelativeLayout>-->
+<!--                </androidx.cardview.widget.CardView>-->
+<!--                <androidx.legacy.widget.Space-->
+<!--                    android:layout_width="10dp"-->
+<!--                    android:layout_height="1dp" />-->
+<!--                <androidx.cardview.widget.CardView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    app:cardCornerRadius="20dp"-->
+<!--                    app:cardElevation="10dp"-->
+<!--                    android:paddingStart="55dp"-->
+<!--                    app:cardBackgroundColor="@color/white"-->
+<!--                    android:padding="4dp"-->
+<!--                    android:textSize="10dp"-->
+<!--                    android:paddingLeft="55dp">-->
+<!--                    <RelativeLayout-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content">-->
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:padding="10dp"-->
+<!--                            android:background="@drawable/rounded_border"-->
+<!--                            android:textColor="#2052E8"-->
+<!--                            android:text="Malayalam"></TextView>-->
+<!--                    </RelativeLayout>-->
+<!--                </androidx.cardview.widget.CardView>-->
+<!--                <androidx.legacy.widget.Space-->
+<!--                    android:layout_width="10dp"-->
+<!--                    android:layout_height="1dp" />-->
+<!--                <androidx.cardview.widget.CardView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    app:cardCornerRadius="20dp"-->
+<!--                    app:cardElevation="10dp"-->
+<!--                    android:paddingStart="55dp"-->
+<!--                    app:cardBackgroundColor="@color/white"-->
+<!--                    android:padding="4dp"-->
+<!--                    android:textSize="10dp"-->
+<!--                    android:paddingLeft="55dp">-->
+<!--                    <RelativeLayout-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content">-->
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:padding="10dp"-->
+<!--                            android:background="@drawable/rounded_border"-->
+<!--                            android:textColor="#2052E8"-->
+<!--                            android:text="Bengali"></TextView>-->
+<!--                    </RelativeLayout>-->
+<!--                </androidx.cardview.widget.CardView>-->
+<!--                <androidx.legacy.widget.Space-->
+<!--                    android:layout_width="10dp"-->
+<!--                    android:layout_height="1dp" />-->
+<!--                <androidx.cardview.widget.CardView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    app:cardCornerRadius="20dp"-->
+<!--                    app:cardElevation="10dp"-->
+<!--                    android:paddingStart="55dp"-->
+<!--                    app:cardBackgroundColor="@color/white"-->
+<!--                    android:padding="4dp"-->
+<!--                    android:textSize="10dp"-->
+<!--                    android:paddingLeft="55dp">-->
+<!--                    <RelativeLayout-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content">-->
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:padding="10dp"-->
+<!--                            android:background="@drawable/rounded_border"-->
+<!--                            android:textColor="#2052E8"-->
+<!--                            android:text="Pubjabi"></TextView>-->
+<!--                    </RelativeLayout>-->
+<!--                </androidx.cardview.widget.CardView>-->
+<!--                <androidx.legacy.widget.Space-->
+<!--                    android:layout_width="10dp"-->
+<!--                    android:layout_height="1dp" />-->
+<!--            </TableRow>-->
+<!--            <TableRow>-->
+<!--                <androidx.legacy.widget.Space-->
+<!--                    android:layout_width="1dp"-->
+<!--                    android:layout_height="10dp" />-->
+<!--            </TableRow>-->
+<!--            <TableRow>-->
+<!--                <androidx.cardview.widget.CardView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    app:cardCornerRadius="20dp"-->
+<!--                    app:cardElevation="10dp"-->
+<!--                    android:paddingStart="55dp"-->
+<!--                    app:cardBackgroundColor="@color/white"-->
+<!--                    android:padding="4dp"-->
+<!--                    android:textSize="10dp"-->
+<!--                    android:paddingLeft="55dp">-->
+<!--                    <RelativeLayout-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content">-->
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:padding="10dp"-->
+<!--                            android:background="@drawable/rounded_border"-->
+<!--                            android:textColor="#2052E8"-->
+<!--                            android:text="Gujarati"></TextView>-->
+<!--                    </RelativeLayout>-->
+<!--                </androidx.cardview.widget.CardView>-->
+<!--                <androidx.legacy.widget.Space-->
+<!--                    android:layout_width="10dp"-->
+<!--                    android:layout_height="1dp" />-->
+<!--                <androidx.cardview.widget.CardView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    app:cardCornerRadius="20dp"-->
+<!--                    app:cardElevation="10dp"-->
+<!--                    android:paddingStart="55dp"-->
+<!--                    app:cardBackgroundColor="@color/white"-->
+<!--                    android:padding="4dp"-->
+<!--                    android:textSize="10dp"-->
+<!--                    android:paddingLeft="55dp">-->
+<!--                    <RelativeLayout-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content">-->
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:padding="10dp"-->
+<!--                            android:background="@drawable/rounded_border"-->
+<!--                            android:textColor="#2052E8"-->
+<!--                            android:text="English"></TextView>-->
+<!--                    </RelativeLayout>-->
+<!--                </androidx.cardview.widget.CardView>-->
+<!--                <androidx.legacy.widget.Space-->
+<!--                    android:layout_width="10dp"-->
+<!--                    android:layout_height="1dp" />-->
+<!--            </TableRow>-->
+            <!--         <Button-->
+            <!--             android:layout_width="wrap_content"-->
+            <!--             android:layout_height="wrap_content"-->
+            <!--             android:layout_margin="16dp"-->
+            <!--             android:button="@android:color/transparent"-->
+            <!--             android:background="@drawable/radio_selector"-->
+
+            <!--             android:elevation="4dp"-->
+            <!--             android:padding="13dp"-->
+            <!--             android:text="Gujarati"-->
+            <!--             android:textColor="@drawable/radio_txt_color"></Button>-->
+
+            <!--         <Button-->
+            <!--             android:layout_width="wrap_content"-->
+            <!--             android:layout_height="wrap_content"-->
+            <!--             android:layout_margin="16dp"-->
+            <!--             android:button="@android:color/transparent"-->
+            <!--             android:background="@drawable/radio_selector"-->
+
+            <!--             android:elevation="4dp"-->
+            <!--             android:padding="13dp"-->
+            <!--             android:text="English"-->
+            <!--             android:textColor="@drawable/radio_txt_color"></Button>-->
+
+            <!--         <Button-->
+            <!--             android:layout_width="wrap_content"-->
+            <!--             android:layout_height="wrap_content"-->
+            <!--             android:layout_margin="16dp"-->
+            <!--             android:button="@android:color/transparent"-->
+            <!--             android:background="@drawable/radio_selector"-->
+
+            <!--             android:elevation="4dp"-->
+            <!--             android:padding="13dp"-->
+            <!--             android:text="Tamil"-->
+            <!--             android:textColor="@drawable/radio_txt_color"></Button>-->
+
+            <!--         <Button-->
+            <!--             android:layout_width="wrap_content"-->
+            <!--             android:layout_height="wrap_content"-->
+            <!--             android:layout_margin="16dp"-->
+            <!--             android:button="@android:color/transparent"-->
+            <!--             android:background="@drawable/radio_selector"-->
+
+            <!--             android:elevation="4dp"-->
+            <!--             android:padding="16dp"-->
+            <!--             android:text="Urdu"-->
+            <!--             android:textColor="@drawable/radio_txt_color"></Button>-->
+
+            <!--         <Button-->
+            <!--             android:layout_width="wrap_content"-->
+            <!--             android:layout_height="wrap_content"-->
+            <!--             android:layout_margin="16dp"-->
+            <!--             android:button="@android:color/transparent"-->
+            <!--             android:background="@drawable/radio_selector"-->
+            <!--             android:elevation="4dp"-->
+            <!--             android:padding="16dp"-->
+            <!--             android:text="Odia"-->
+            <!--             android:textColor="@drawable/radio_txt_color"></Button>-->
+
+            <!--         <Button-->
+            <!--             android:layout_width="wrap_content"-->
+            <!--             android:layout_height="wrap_content"-->
+            <!--             android:layout_margin="16dp"-->
+            <!--             android:button="@android:color/transparent"-->
+            <!--             android:background="@drawable/radio_selector"-->
+
+            <!--             android:elevation="4dp"-->
+            <!--             android:padding="16dp"-->
+            <!--             android:text="Kannada"-->
+            <!--             android:textColor="@drawable/radio_txt_color"></Button>-->
+
+            <!--         <Button-->
+            <!--             android:layout_width="wrap_content"-->
+            <!--             android:layout_height="wrap_content"-->
+            <!--             android:layout_margin="16dp"-->
+            <!--             android:button="@android:color/transparent"-->
+            <!--             android:background="@drawable/radio_selector"-->
+
+            <!--             android:elevation="4dp"-->
+            <!--             android:padding="16dp"-->
+            <!--             android:text="Malayalam"-->
+            <!--             android:textColor="@drawable/radio_txt_color"></Button>-->
+
+
+<!--        </TableLayout>-->
+        <!--         -->
+        <!--     <RadioGroup-->
+        <!--         android:layout_width="match_parent"-->
+        <!--         android:layout_height="wrap_content"-->
+        <!--         android:orientation="horizontal">-->
+
+        <!--         <RadioButton-->
+        <!--             android:layout_width="wrap_content"-->
+        <!--             android:layout_height="wrap_content"-->
+        <!--             android:layout_margin="16dp"-->
+        <!--             android:background="@drawable/radio_selector"-->
+        <!--             android:button="@android:color/transparent"-->
+        <!--             android:elevation="4dp"-->
+        <!--             android:padding="13dp"-->
+        <!--             android:text="Hindi"-->
+        <!--             android:textColor="@drawable/radio_txt_color"></RadioButton>-->
+
+        <!--         <RadioButton-->
+        <!--             android:layout_width="wrap_content"-->
+        <!--             android:layout_height="wrap_content"-->
+        <!--             android:layout_margin="16dp"-->
+        <!--             android:background="@drawable/radio_selector"-->
+        <!--             android:button="@android:color/transparent"-->
+        <!--             android:elevation="4dp"-->
+        <!--             android:padding="13dp"-->
+        <!--             android:text="Gujarati"-->
+        <!--             android:textColor="@drawable/radio_txt_color"></RadioButton>-->
+
+        <!--         <RadioButton-->
+        <!--             android:layout_width="wrap_content"-->
+        <!--             android:layout_height="wrap_content"-->
+        <!--             android:layout_margin="16dp"-->
+        <!--             android:background="@drawable/radio_selector"-->
+        <!--             android:button="@android:color/transparent"-->
+        <!--             android:elevation="4dp"-->
+        <!--             android:padding="13dp"-->
+        <!--             android:text="English"-->
+        <!--             android:textColor="@drawable/radio_txt_color"></RadioButton>-->
+
+        <!--         <RadioButton-->
+        <!--             android:layout_width="wrap_content"-->
+        <!--             android:layout_height="wrap_content"-->
+        <!--             android:layout_margin="16dp"-->
+        <!--             android:background="@drawable/radio_selector"-->
+        <!--             android:button="@android:color/transparent"-->
+        <!--             android:elevation="4dp"-->
+        <!--             android:padding="13dp"-->
+        <!--             android:text="Tamil"-->
+        <!--             android:textColor="@drawable/radio_txt_color"></RadioButton>-->
+
+        <!--         <RadioButton-->
+        <!--             android:layout_width="wrap_content"-->
+        <!--             android:layout_height="wrap_content"-->
+        <!--             android:layout_margin="16dp"-->
+        <!--             android:background="@drawable/radio_selector"-->
+        <!--             android:button="@android:color/transparent"-->
+        <!--             android:elevation="4dp"-->
+        <!--             android:padding="16dp"-->
+        <!--             android:text="Urdu"-->
+        <!--             android:textColor="@drawable/radio_txt_color"></RadioButton>-->
+
+        <!--         <RadioButton-->
+        <!--             android:layout_width="wrap_content"-->
+        <!--             android:layout_height="wrap_content"-->
+        <!--             android:layout_margin="16dp"-->
+        <!--             android:background="@drawable/radio_selector"-->
+        <!--             android:button="@android:color/transparent"-->
+        <!--             android:elevation="4dp"-->
+        <!--             android:padding="16dp"-->
+        <!--             android:text="Odia"-->
+        <!--             android:textColor="@drawable/radio_txt_color"></RadioButton>-->
+
+        <!--         <RadioButton-->
+        <!--             android:layout_width="wrap_content"-->
+        <!--             android:layout_height="wrap_content"-->
+        <!--             android:layout_margin="16dp"-->
+        <!--             android:background="@drawable/radio_selector"-->
+        <!--             android:button="@android:color/transparent"-->
+        <!--             android:elevation="4dp"-->
+        <!--             android:padding="16dp"-->
+        <!--             android:text="Kannada"-->
+        <!--             android:textColor="@drawable/radio_txt_color"></RadioButton>-->
+
+        <!--         <RadioButton-->
+        <!--             android:layout_width="wrap_content"-->
+        <!--             android:layout_height="wrap_content"-->
+        <!--             android:layout_margin="16dp"-->
+        <!--             android:background="@drawable/radio_selector"-->
+        <!--             android:button="@android:color/transparent"-->
+        <!--             android:elevation="4dp"-->
+        <!--             android:padding="16dp"-->
+        <!--             android:text="Malayalam"-->
+        <!--             android:textColor="@drawable/radio_txt_color"></RadioButton>-->
+        <!--     </RadioGroup>-->
+
+        <!--    <LinearLayout-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:layout_centerInParent="true"-->
+        <!--        android:gravity="center_horizontal"-->
+        <!--        android:orientation="vertical">-->
+
+        <!--        <ImageView-->
+        <!--            android:layout_width="120dp"-->
+        <!--            android:layout_height="120dp"-->
+        <!--            android:src="@drawable/bookquote" />-->
+
+        <!--        <TextView-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:text="@string/slide_1_title"-->
+        <!--            android:textColor="@android:color/white"-->
+        <!--            android:textSize="30dp"-->
+        <!--            android:textStyle="bold" />-->
+
+        <!--        <TextView-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginTop="20dp"-->
+        <!--            android:paddingLeft="40dp"-->
+        <!--            android:paddingRight="40dp"-->
+        <!--            android:text="@string/slide_1_desc"-->
+        <!--            android:textAlignment="center"-->
+        <!--            android:textColor="@android:color/white"-->
+        <!--            android:textSize="16dp"-->
+        <!--            android:gravity="center_horizontal" />-->
+        <!--    </LinearLayout>-->
+    </LinearLayout>
+</LinearLayout>

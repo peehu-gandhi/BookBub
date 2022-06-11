@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">BookBub</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide_1_title">Codeplayon.com solution </string>
+    <string name="slide_1_desc">We are share learn and explore new technolye </string>
+
+    <string name="slide_2_title">connect with us for new </string>
+    <string name="slide_2_desc">easy to learn and explore your expirence  </string>
+    <string name="swipe_left_for_register">Swipe Left for Register</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="e_mail">Email</string>
+    <string name="tag">Let\'s join us and \nBuild your relationship with others</string>
+    <string name="swipe_right_for_login">Swipe Right for Login</string>
+    <string name="register">Register</string>
+    <string name="re_type_password">Re-type Password</string>
+    <string name="your_name">Full Name</string>
+
+    <string name="slide_3_title">Great Discounts</string>
+    <string name="slide_3_desc">Best discounts on every single service we offer!</string>
+
+    <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
+    <string name="play_again">Play Again</string>
+
+
+    <string name="next">Next</string>
+    <string name="discover">Discover</string>
+    <string name="shop">Shop</string>
+    <string name="offers">Offers</string>
+    <string name="rewards">Rewards</string>
+    <string name="discover_text">Look for things around you</string>
+    <string name="shop_text"><![CDATA[Get the best deals & Coupons]]></string>
+    <string name="offers_text">Find great offers while you discover</string>
+    <string name="rewards_text"><![CDATA[Free recharge coupons & more]]></string>
+    <string name="get_started">Get Started</string>
+    <string name="mob_no">Mobile No.</string>
+
+</resources>

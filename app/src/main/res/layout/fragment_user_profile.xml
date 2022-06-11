@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/frame2"
+
+    android:layout_height="match_parent"
+    tools:context=".UserProfileFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/graylight"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="405dp">
+            <LinearLayout
+                android:background="@drawable/bguser2"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_marginTop="45dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="150dp"
+                    android:id="@+id/userimg"
+                    android:layout_height="150dp"
+                    android:src="@drawable/my_acc"/>
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Welcome, "
+                    android:textColor="#fff"
+                    android:id="@+id/welcome"
+                    android:textStyle="bold"
+                    android:textSize="21sp"/>
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="400dp"
+                android:layout_height="120dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="275dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Books Uploaded"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/booksuploaded"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_regular"
+                            android:paddingTop="10dp"
+                            android:text="125"
+                            android:textColor="@color/startblue"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <androidx.legacy.widget.Space
+                        android:layout_width="162dp"
+                        android:layout_height="49dp"></androidx.legacy.widget.Space>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_regular"
+                            android:text="Quotes Shared"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/quotesshared"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_regular"
+                            android:paddingTop="10dp"
+                            android:text="1205"
+                            android:textColor="@color/startblue"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_marginTop="45dp">
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="name"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:padding="15dp"
+                    android:inputType="textEmailAddress"
+                    android:fontFamily="@font/roboto_regular"
+                    android:layout_above="@id/edpasswd"
+                    android:background="@drawable/et_custom"
+                    android:textSize="15sp" />
+
+            <androidx.legacy.widget.Space
+                android:layout_width="27dp"
+                android:layout_height="37dp"></androidx.legacy.widget.Space>
+            <EditText
+                android:id="@+id/mobno"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="name"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:padding="15dp"
+                android:inputType="textEmailAddress"
+                android:fontFamily="@font/roboto_regular"
+                android:layout_above="@id/edpasswd"
+                android:background="@drawable/et_custom"
+                android:textSize="15sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+<!--            <Button-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="left"-->
+<!--                android:layout_marginTop="35dp"-->
+<!--                android:background="@drawable/buttonstyle"-->
+<!--                android:text="EDIT"-->
+<!--                android:textColor="#fff" />-->
+
+            <Space
+                android:layout_width="226dp"
+                android:layout_height="14dp"></Space>
+
+<!--            <Button-->
+<!--                android:id="@+id/logout"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="right"-->
+<!--                android:layout_marginTop="35dp"-->
+<!--                android:background="@drawable/buttonstyle"-->
+<!--                android:text="LOGOUT"-->
+<!--                android:textColor="#fff" />-->
+
+
+
+            <Button
+                android:id="@+id/logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_custom"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="@android:color/white"
+                android:text="LOGOUT"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

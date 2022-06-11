@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="202dp"
+        android:background="@drawable/rect"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/txt_choose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CHOOSE MODE"
+            android:textColor="@color/white"
+            android:textSize="18sp"></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_choose"
+            android:text="Either upload pdf of start writring now."
+            android:textColor="@color/white"
+            android:textSize="12sp"></TextView>
+    </RelativeLayout>
+
+    <androidx.legacy.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="35dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/btnchoose"
+        android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp"
+                >
+                <LinearLayout
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="16dp"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="227dp"
+                        android:layout_height="197dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/pdfupload" />
+                    <TextView
+                        android:id="@+id/tvchoose"
+                        android:text="Choose PDF.."
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:visibility="gone"
+    android:text="UPLOAD"
+    android:id="@+id/bt">
+
+</Button>
+            <!--         <Button-->
+            <!--             android:layout_width="wrap_content"-->
+            <!--             android:layout_height="wrap_content"-->
+            <!--             android:layout_margin="16dp"-->
+            <!--             android:button="@android:color/transparent"-->
+            <!--             android:background="@drawable/radio_selector"-->
+
+            <!--             android:elevation="4dp"-->
+            <!--             android:padding="13dp"-->
+            <!--             android:text="Gujarati"-->
+            <!--             android:textColor="@drawable/radio_txt_color"></Button>-->
+
+            <!--         <Button-->
+            <!--             android:layout_width="wrap_content"-->
+            <!--             android:layout_height="wrap_content"-->
+            <!--             android:layout_margin="16dp"-->
+            <!--             android:button="@android:color/transparent"-->
+            <!--             android:background="@drawable/radio_selector"-->
+
+            <!--             android:elevation="4dp"-->
+            <!--             android:padding="13dp"-->
+            <!--             android:text="English"-->
+            <!--             android:textColor="@drawable/radio_txt_color"></Button>-->
+
+            <!--         <Button-->
+            <!--             android:layout_width="wrap_content"-->
+            <!--             android:layout_height="wrap_content"-->
+            <!--             android:layout_margin="16dp"-->
+            <!--             android:button="@android:color/transparent"-->
+            <!--             android:background="@drawable/radio_selector"-->
+
+            <!--             android:elevation="4dp"-->
+            <!--             android:padding="13dp"-->
+            <!--             android:text="Tamil"-->
+            <!--             android:textColor="@drawable/radio_txt_color"></Button>-->
+
+            <!--         <Button-->
+            <!--             android:layout_width="wrap_content"-->
+            <!--             android:layout_height="wrap_content"-->
+            <!--             android:layout_margin="16dp"-->
+            <!--             android:button="@android:color/transparent"-->
+            <!--             android:background="@drawable/radio_selector"-->
+
+            <!--             android:elevation="4dp"-->
+            <!--             android:padding="16dp"-->
+            <!--             android:text="Urdu"-->
+            <!--             android:textColor="@drawable/radio_txt_color"></Button>-->
+
+            <!--         <Button-->
+            <!--             android:layout_width="wrap_content"-->
+            <!--             android:layout_height="wrap_content"-->
+            <!--             android:layout_margin="16dp"-->
+            <!--             android:button="@android:color/transparent"-->
+            <!--             android:background="@drawable/radio_selector"-->
+            <!--             android:elevation="4dp"-->
+            <!--             android:padding="16dp"-->
+            <!--             android:text="Odia"-->
+            <!--             android:textColor="@drawable/radio_txt_color"></Button>-->
+
+            <!--         <Button-->
+            <!--             android:layout_width="wrap_content"-->
+            <!--             android:layout_height="wrap_content"-->
+            <!--             android:layout_margin="16dp"-->
+            <!--             android:button="@android:color/transparent"-->
+            <!--             android:background="@drawable/radio_selector"-->
+
+            <!--             android:elevation="4dp"-->
+            <!--             android:padding="16dp"-->
+            <!--             android:text="Kannada"-->
+            <!--             android:textColor="@drawable/radio_txt_color"></Button>-->
+
+            <!--         <Button-->
+            <!--             android:layout_width="wrap_content"-->
+            <!--             android:layout_height="wrap_content"-->
+            <!--             android:layout_margin="16dp"-->
+            <!--             android:button="@android:color/transparent"-->
+            <!--             android:background="@drawable/radio_selector"-->
+
+            <!--             android:elevation="4dp"-->
+            <!--             android:padding="16dp"-->
+            <!--             android:text="Malayalam"-->
+            <!--             android:textColor="@drawable/radio_txt_color"></Button>-->
+
+
+        <!--         -->
+        <!--     <RadioGroup-->
+        <!--         android:layout_width="match_parent"-->
+        <!--         android:layout_height="wrap_content"-->
+        <!--         android:orientation="horizontal">-->
+
+        <!--         <RadioButton-->
+        <!--             android:layout_width="wrap_content"-->
+        <!--             android:layout_height="wrap_content"-->
+        <!--             android:layout_margin="16dp"-->
+        <!--             android:background="@drawable/radio_selector"-->
+        <!--             android:button="@android:color/transparent"-->
+        <!--             android:elevation="4dp"-->
+        <!--             android:padding="13dp"-->
+        <!--             android:text="Hindi"-->
+        <!--             android:textColor="@drawable/radio_txt_color"></RadioButton>-->
+
+        <!--         <RadioButton-->
+        <!--             android:layout_width="wrap_content"-->
+        <!--             android:layout_height="wrap_content"-->
+        <!--             android:layout_margin="16dp"-->
+        <!--             android:background="@drawable/radio_selector"-->
+        <!--             android:button="@android:color/transparent"-->
+        <!--             android:elevation="4dp"-->
+        <!--             android:padding="13dp"-->
+        <!--             android:text="Gujarati"-->
+        <!--             android:textColor="@drawable/radio_txt_color"></RadioButton>-->
+
+        <!--         <RadioButton-->
+        <!--             android:layout_width="wrap_content"-->
+        <!--             android:layout_height="wrap_content"-->
+        <!--             android:layout_margin="16dp"-->
+        <!--             android:background="@drawable/radio_selector"-->
+        <!--             android:button="@android:color/transparent"-->
+        <!--             android:elevation="4dp"-->
+        <!--             android:padding="13dp"-->
+        <!--             android:text="English"-->
+        <!--             android:textColor="@drawable/radio_txt_color"></RadioButton>-->
+
+        <!--         <RadioButton-->
+        <!--             android:layout_width="wrap_content"-->
+        <!--             android:layout_height="wrap_content"-->
+        <!--             android:layout_margin="16dp"-->
+        <!--             android:background="@drawable/radio_selector"-->
+        <!--             android:button="@android:color/transparent"-->
+        <!--             android:elevation="4dp"-->
+        <!--             android:padding="13dp"-->
+        <!--             android:text="Tamil"-->
+        <!--             android:textColor="@drawable/radio_txt_color"></RadioButton>-->
+
+        <!--         <RadioButton-->
+        <!--             android:layout_width="wrap_content"-->
+        <!--             android:layout_height="wrap_content"-->
+        <!--             android:layout_margin="16dp"-->
+        <!--             android:background="@drawable/radio_selector"-->
+        <!--             android:button="@android:color/transparent"-->
+        <!--             android:elevation="4dp"-->
+        <!--             android:padding="16dp"-->
+        <!--             android:text="Urdu"-->
+        <!--             android:textColor="@drawable/radio_txt_color"></RadioButton>-->
+
+        <!--         <RadioButton-->
+        <!--             android:layout_width="wrap_content"-->
+        <!--             android:layout_height="wrap_content"-->
+        <!--             android:layout_margin="16dp"-->
+        <!--             android:background="@drawable/radio_selector"-->
+        <!--             android:button="@android:color/transparent"-->
+        <!--             android:elevation="4dp"-->
+        <!--             android:padding="16dp"-->
+        <!--             android:text="Odia"-->
+        <!--             android:textColor="@drawable/radio_txt_color"></RadioButton>-->
+
+        <!--         <RadioButton-->
+        <!--             android:layout_width="wrap_content"-->
+        <!--             android:layout_height="wrap_content"-->
+        <!--             android:layout_margin="16dp"-->
+        <!--             android:background="@drawable/radio_selector"-->
+        <!--             android:button="@android:color/transparent"-->
+        <!--             android:elevation="4dp"-->
+        <!--             android:padding="16dp"-->
+        <!--             android:text="Kannada"-->
+        <!--             android:textColor="@drawable/radio_txt_color"></RadioButton>-->
+
+        <!--         <RadioButton-->
+        <!--             android:layout_width="wrap_content"-->
+        <!--             android:layout_height="wrap_content"-->
+        <!--             android:layout_margin="16dp"-->
+        <!--             android:background="@drawable/radio_selector"-->
+        <!--             android:button="@android:color/transparent"-->
+        <!--             android:elevation="4dp"-->
+        <!--             android:padding="16dp"-->
+        <!--             android:text="Malayalam"-->
+        <!--             android:textColor="@drawable/radio_txt_color"></RadioButton>-->
+        <!--     </RadioGroup>-->
+
+        <!--    <LinearLayout-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:layout_centerInParent="true"-->
+        <!--        android:gravity="center_horizontal"-->
+        <!--        android:orientation="vertical">-->
+
+        <!--        <ImageView-->
+        <!--            android:layout_width="120dp"-->
+        <!--            android:layout_height="120dp"-->
+        <!--            android:src="@drawable/bookquote" />-->
+
+        <!--        <TextView-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:text="@string/slide_1_title"-->
+        <!--            android:textColor="@android:color/white"-->
+        <!--            android:textSize="30dp"-->
+        <!--            android:textStyle="bold" />-->
+
+        <!--        <TextView-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginTop="20dp"-->
+        <!--            android:paddingLeft="40dp"-->
+        <!--            android:paddingRight="40dp"-->
+        <!--            android:text="@string/slide_1_desc"-->
+        <!--            android:textAlignment="center"-->
+        <!--            android:textColor="@android:color/white"-->
+        <!--            android:textSize="16dp"-->
+        <!--            android:gravity="center_horizontal" />-->
+        <!--    </LinearLayout>-->
+    </LinearLayout>
+</LinearLayout>
